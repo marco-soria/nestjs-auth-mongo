@@ -11,6 +11,7 @@ import { DatabaseModule } from './database/database.module';
 import { environments } from './environments';
 import config from './config';
 import { lastValueFrom } from 'rxjs';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { lastValueFrom } from 'rxjs';
     UsersModule,
     ProductsModule,
     DatabaseModule,
+    AuthModule
   ],
   controllers: [AppController],
   providers: [
